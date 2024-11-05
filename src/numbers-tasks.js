@@ -108,7 +108,7 @@ function getLinearEquationRoot(a, b) {
 function getAngleBetweenVectors(x1, y1, x2, y2) {
   return Math.acos(
     (x1 * x2 + y1 * y2) /
-    (Math.sqrt(x1 ** 2 + y1 ** 2) * Math.sqrt(x2 ** 2 + y2 ** 2))
+      (Math.sqrt(x1 ** 2 + y1 ** 2) * Math.sqrt(x2 ** 2 + y2 ** 2))
   );
 }
 
@@ -200,7 +200,6 @@ function roundToPowerOfTen(num, pow) {
  *   17 => true
  */
 function isPrime(n) {
-
   if (n === 2 || n === 3) return true;
   if (n <= 1 || n % 2 === 0 || n % 3 === 0) return false;
   for (let i = 5; i * i <= n; i += 6) {
